@@ -11,7 +11,10 @@ struct AddView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
-    @State var textFieldText = ""
+    @State private var textFieldText = ""
+    
+    @State private var alertTitle = ""
+    @State private var showAlert = false
     
     var body: some View {
         ScrollView {
@@ -35,11 +38,24 @@ struct AddView: View {
             .padding(14)
         }
         .navigationTitle("Add in Task 🖊")
+        .alert(alertTitle, isPresented: $showAlert, actions: {})
     }
     
     func saveButtonPressed() {
-        listViewModel.addItem(title: textFieldText)
-        presentationMode.wrappedValue.dismiss()
+        if textIsAppropriate() {
+            listViewModel.addItem(title: textFieldText)
+            presentationMode.wrappedValue.dismiss()
+        }
+    }
+    
+    func textIsAppropriate() -> Bool {
+        if textFieldText.count < 3 {
+            alertTitle = "Your new task must be at least 3 characters long! 😱"
+            showAlert.toggle()
+            return false
+        }
+        
+        return true
     }
 }
 
