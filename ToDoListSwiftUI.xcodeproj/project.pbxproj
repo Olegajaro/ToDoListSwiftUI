@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		10B6924527345A31003D2345 /* ToDoListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6924427345A31003D2345 /* ToDoListSwiftUIApp.swift */; };
-		10B6924727345A31003D2345 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6924627345A31003D2345 /* ContentView.swift */; };
 		10B6924927345A31003D2345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B6924827345A31003D2345 /* Assets.xcassets */; };
 		10B6924C27345A31003D2345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B6924B27345A31003D2345 /* Preview Assets.xcassets */; };
 		10B6925327345B0D003D2345 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 10B6925227345B0D003D2345 /* .gitignore */; };
+		10B6925627345C5B003D2345 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925527345C5B003D2345 /* ListView.swift */; };
+		10B6925827345E01003D2345 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925727345E01003D2345 /* ListRowView.swift */; };
+		10B6925A27346055003D2345 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925927346055003D2345 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10B6924127345A31003D2345 /* ToDoListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B6924427345A31003D2345 /* ToDoListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSwiftUIApp.swift; sourceTree = "<group>"; };
-		10B6924627345A31003D2345 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10B6924827345A31003D2345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10B6924B27345A31003D2345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10B6925227345B0D003D2345 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		10B6925527345C5B003D2345 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		10B6925727345E01003D2345 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		10B6925927346055003D2345 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,8 @@
 		10B6924327345A31003D2345 /* ToDoListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				10B6925427345C50003D2345 /* Views */,
 				10B6924427345A31003D2345 /* ToDoListSwiftUIApp.swift */,
-				10B6924627345A31003D2345 /* ContentView.swift */,
 				10B6924827345A31003D2345 /* Assets.xcassets */,
 				10B6924A27345A31003D2345 /* Preview Content */,
 			);
@@ -68,6 +72,16 @@
 				10B6924B27345A31003D2345 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10B6925427345C50003D2345 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10B6925527345C5B003D2345 /* ListView.swift */,
+				10B6925727345E01003D2345 /* ListRowView.swift */,
+				10B6925927346055003D2345 /* AddView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B6924727345A31003D2345 /* ContentView.swift in Sources */,
+				10B6925A27346055003D2345 /* AddView.swift in Sources */,
 				10B6924527345A31003D2345 /* ToDoListSwiftUIApp.swift in Sources */,
+				10B6925627345C5B003D2345 /* ListView.swift in Sources */,
+				10B6925827345E01003D2345 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
