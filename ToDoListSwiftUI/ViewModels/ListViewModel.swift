@@ -29,13 +29,12 @@ class ListViewModel: ObservableObject {
     init() {
         getItems()
     }
-    
     func getItems() {
         guard
             let data = UserDefaults.standard.data(forKey: tasksKey),
             let saveItems = try? JSONDecoder().decode([ItemModel].self, from: data)
         else { return }
-        
+         
         self.items = saveItems
     }
     
