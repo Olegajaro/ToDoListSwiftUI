@@ -32,7 +32,8 @@ class ListViewModel: ObservableObject {
     func getItems() {
         guard
             let data = UserDefaults.standard.data(forKey: tasksKey),
-            let saveItems = try? JSONDecoder().decode([ItemModel].self, from: data)
+            let saveItems = try? JSONDecoder().decode([ItemModel].self,
+                                                      from: data)
         else { return }
          
         self.items = saveItems
@@ -55,11 +56,6 @@ class ListViewModel: ObservableObject {
         if let index = items.firstIndex(where: { $0.id == item.id }) {
             items[index] = item.updateCompletion()
         }
-//        if let index = items.firstIndex { existingItem in
-//            return existingItem.id == item.id
-//        } {
-//            // run this code
-//        }
     }
     
     func saveItems() {

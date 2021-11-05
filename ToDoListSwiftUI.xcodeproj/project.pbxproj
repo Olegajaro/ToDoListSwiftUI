@@ -16,6 +16,7 @@
 		10B6925A27346055003D2345 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925927346055003D2345 /* AddView.swift */; };
 		10B6925D273465AD003D2345 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925C273465AD003D2345 /* ItemModel.swift */; };
 		10B6926027346C4F003D2345 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6925F27346C4F003D2345 /* ListViewModel.swift */; };
+		10C85A072735BFED00469A42 /* NoTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C85A062735BFED00469A42 /* NoTasksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		10B6925927346055003D2345 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		10B6925C273465AD003D2345 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		10B6925F27346C4F003D2345 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		10C85A062735BFED00469A42 /* NoTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTasksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				10B6925527345C5B003D2345 /* ListView.swift */,
 				10B6925727345E01003D2345 /* ListRowView.swift */,
 				10B6925927346055003D2345 /* AddView.swift */,
+				10C85A062735BFED00469A42 /* NoTasksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B6925D273465AD003D2345 /* ItemModel.swift in Sources */,
+				10C85A072735BFED00469A42 /* NoTasksView.swift in Sources */,
 				10B6925A27346055003D2345 /* AddView.swift in Sources */,
 				10B6926027346C4F003D2345 /* ListViewModel.swift in Sources */,
 				10B6924527345A31003D2345 /* ToDoListSwiftUIApp.swift in Sources */,
