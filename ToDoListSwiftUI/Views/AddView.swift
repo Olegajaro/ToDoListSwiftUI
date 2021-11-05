@@ -37,7 +37,7 @@ struct AddView: View {
             }
             .padding(14)
         }
-        .navigationTitle("Add in Task 🖊")
+        .navigationTitle("Add in List 🖊")
         .alert(alertTitle, isPresented: $showAlert, actions: {})
     }
     
