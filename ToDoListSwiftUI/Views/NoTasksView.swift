@@ -19,7 +19,7 @@ struct NoTasksView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 
-                Text("Are you a productive Person? I think you should click the add button and add a bunch of items to your todo list!")
+                Text("Are you a productive Person? I think you should click the add button and add a bunch of tasks to your todo list!")
                     .padding(.bottom, 20)
                 NavigationLink(destination: AddView()) {
                     Text("Add Something 🥳")
@@ -42,6 +42,7 @@ struct NoTasksView: View {
                 .scaleEffect(animate ? 1.1 : 1.0)
                 .offset(y: animate ? -7 : 0)
             }
+            .frame(maxWidth: 400)
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)
